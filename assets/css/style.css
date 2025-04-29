@@ -571,10 +571,17 @@ html {
   padding-top: 10px;
 }
 
-.mp-img {
-  position: relative;
-  height: 700px;
+.mp-img-cont {
+  display: flex;
+  justify-content: right;
 }
+
+.mp-img {
+  width: 80%;
+  height: 40%;
+}
+
+
 
 .mp-button {
   width: 70%;
