@@ -1,0 +1,87 @@
+ /* Responsive Design - Mobile first */
+ @media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .hero-right,
+    .hero-text {
+        width: 100%;
+        /* Ensure both columns take up full width on mobile */
+    }
+
+    .hero-right {
+        margin-top: 0;
+        /* Optional margin between the columns */
+    }
+
+    .cta-button {
+        font-size: 14px;
+    }
+
+    .offer-texties {
+        font-size: 14px;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .subheading {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) {
+    .cta-button {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .hero-button-container {
+        align-self: flex-start;
+        width: 75%;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* Align the items to the left */
+        justify-content: flex-start;
+        padding: 0px 3%;
+    }
+}
+@media (max-width: 767px) {
+    .desktop-img{
+        display: none;
+    }
+   
+    .faq-answer p{
+        font-size: 14px;
+    }
+    
+    .faq-question::after { 
+        font-size: 18px;
+        left: 10px; 
+        top: 0px;
+    }
+    .faq-answer {
+        display: none; 
+        padding-top: 40px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+
+} 
+
+@media (max-width: 767px) {
+    .ben-div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
