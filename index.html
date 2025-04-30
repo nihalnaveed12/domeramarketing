@@ -668,7 +668,8 @@
         slideBanner();
       });
     </script>
-    <script>
+
+     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const carouselWrapper = document.getElementById("carouselWrapper");
         const slides = document.querySelectorAll(".review-card");
@@ -771,46 +772,8 @@
         resetAutoScroll();
         updateCarousel();
       });
-    </script>
-    <!-- <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Function to create and start a counter
-            function createCounter(counterId, valueId, start, end, duration) {
-                let counterValue = document.getElementById(valueId);
-                let current = start;
-                let increment = Math.ceil((end - start) / (duration / 50));
-
-                function animateCounter() {
-                    current += increment;
-                    if (current > end) current = end; // Cap at the end value
-
-                    // Update the number dynamically with currency formatting
-                    counterValue.textContent = `$${current.toLocaleString()}`;
-
-                    if (current < end) {
-                        setTimeout(animateCounter, 50); // Adjust animation speed
-                    }
-                }
-
-                // Intersection Observer to trigger animation on scroll
-                let observer = new IntersectionObserver(function (entries, observer) {
-                    if (entries[0].isIntersecting) {
-                        animateCounter(); // Start counter animation
-                        observer.disconnect(); // Stop observing once triggered
-                    }
-                }, {
-                    threshold: 0.5 // Adjust visibility percentage (0.5 = 50% visible)
-                });
-
-                observer.observe(document.getElementById(counterId)); // Observe the main counter element
-            }
-
-            // Create counters for each element
-            createCounter('counter1', 'counter-value1', 1, 87, 1000);       // Counter 1: $1 to $87
-            createCounter('counter2', 'counter-value2', 1, 5000, 1300);    // Counter 2: $1 to $5,000
-            createCounter('counter3', 'counter-value3', 1, 370000, 1600);  // Counter 3: $1 to $370,000
-        });
-    </script> -->
+    </script> 
+   
 
     <script>
       // Names
@@ -1018,39 +981,6 @@
       // Start notifications
       setTimeout(showNotification, 8000);
       setInterval(showNotification, 25000);
-    </script>
-
-    <script>
-      // Configurable values
-      const taken = 24;
-      const total = 30;
-
-      // Elements
-      const takenCount = document.getElementById("taken-count");
-      const totalCount = document.getElementById("total-count");
-      const progressFill = document.getElementById("progress-fill");
-
-      // Set total count
-      totalCount.innerText = total;
-
-      // Counter animation
-      let current = 0;
-      const interval = setInterval(() => {
-        if (current <= taken) {
-          takenCount.innerText = current;
-          const percentage = (current / total) * 100;
-          progressFill.style.width = percentage + "%";
-          current++;
-        } else {
-          clearInterval(interval);
-        }
-      }, 50);
-
-      AOS.init({
-        once: true,
-        offset: 200,
-        duration: 1200,
-      });
     </script>
   </body>
 </html>
