@@ -559,7 +559,12 @@ margin: 80px 0;
 
 
 
-
+.food-p {
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+ font-size: 50px;
+  line-height: 0.8;
+}
 .food-content {
     position: relative;
     height: 100%;
@@ -609,9 +614,8 @@ margin: 80px 0;
     position: relative;
     background: #686ffe;
     border-radius: 20px;
-    padding: 10px;
-    width: 70%;
-
+    padding: 20px;
+    width: 80%;
 }
 
 .quote {
@@ -626,12 +630,19 @@ margin: 80px 0;
     margin-top: 20px;
 }
 
+.food-founder {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
 .avatar {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 20px auto;
+    margin-top: 20px;
     border: 3px solid white;
 }
 
