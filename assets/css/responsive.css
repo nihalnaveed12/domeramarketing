@@ -85,6 +85,11 @@
         text-align: center;
         gap: 50px;
     }
+
+    .ben-p {
+        text-align: start;
+       padding-left:20px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -93,4 +98,6 @@
         
         display: flex;
     }
+
+
 }
